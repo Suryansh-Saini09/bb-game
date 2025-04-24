@@ -37,7 +37,7 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 34px;
     background-color: rgb(82, 167, 220);
     color: white;
     flex-wrap: wrap;
