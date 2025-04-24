@@ -41,7 +41,7 @@ function generateHitNumber() {
 
 function createBubbles() {
     let clutter = "";
-    let bubbleCount = 64
+    let bubbleCount = 72
 
     for (let i = 0; i < bubbleCount; i++) {
         let randomNum = Math.floor(Math.random() * 10);
