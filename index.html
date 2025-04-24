@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div id="main">
         <div id="panel">
             <div id="ptop">
-                <div class="elem"><h2>HIT</h2>
-                <div id="hitval" class="box">7</div>
+                <div class="elem">
+                    <h2>HIT</h2>
+                    <div id="hitval" class="box">0</div>
+                </div>
+                <div class="elem">
+                    <h2>TIMER</h2>
+                    <div id="timerval" class="box">30</div>
+                </div>
+                <div class="elem">
+                    <h2>SCORE</h2>
+                    <div id="scoreval" class="box">0</div>
+                </div>
             </div>
-                <div class="elem"><h2>TIMER</h2>
-                <div id="timerval" class="box">60</div>
-            </div>
-                <div class="elem"><h2>SCORE</h2>
-                <div id="scoreval" class="box">0</div>
-            </div>
-            </div>
-            <div id="pbtm">
-                <div class="bubble">5</div>
-            </div>
+            <div id="pbtm"></div>
         </div>
     </div>
+    <button id="toggleMusic" style="position:absolute; top:10px; right:10px;">🔈</button>
+    <audio id="hitSound" src="bubble-pop-283674.mp3" preload="auto" playsinline></audio>
+    <audio id="gameOverSound" src="8-bit-game-over-sound-effect-331435.mp3" preload="auto" playsinline></audio>
+    <audio id="bgMusic" src="8-bit-chiptune-action-music-for-video-games-329940.mp3" preload="auto" playsinline loop></audio>
     <script src="script.js"></script>
 </body>
 </html>
